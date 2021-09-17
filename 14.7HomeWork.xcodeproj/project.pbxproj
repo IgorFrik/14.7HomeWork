@@ -14,6 +14,8 @@
 		78894F3926DE945500DA4AD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78894F3826DE945500DA4AD0 /* Assets.xcassets */; };
 		78894F3C26DE945500DA4AD0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78894F3A26DE945500DA4AD0 /* LaunchScreen.storyboard */; };
 		78894F4426DE949000DA4AD0 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78894F4326DE949000DA4AD0 /* FirstViewController.swift */; };
+		78933CF626F4ECE2008FF343 /* CoreDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78933CF526F4ECE2008FF343 /* CoreDataViewController.swift */; };
+		78933CF826F4EE8F008FF343 /* RealmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78933CF726F4EE8F008FF343 /* RealmViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		78894F3B26DE945500DA4AD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		78894F3D26DE945500DA4AD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		78894F4326DE949000DA4AD0 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		78933CF526F4ECE2008FF343 /* CoreDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataViewController.swift; sourceTree = "<group>"; };
+		78933CF726F4EE8F008FF343 /* RealmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,8 @@
 				78894F2C26DE945500DA4AD0 /* AppDelegate.swift */,
 				78894F2E26DE945500DA4AD0 /* SceneDelegate.swift */,
 				78894F3226DE945500DA4AD0 /* Main.storyboard */,
+				78933CF726F4EE8F008FF343 /* RealmViewController.swift */,
+				78933CF526F4ECE2008FF343 /* CoreDataViewController.swift */,
 				78894F4326DE949000DA4AD0 /* FirstViewController.swift */,
 				78894F3826DE945500DA4AD0 /* Assets.xcassets */,
 				78894F3A26DE945500DA4AD0 /* LaunchScreen.storyboard */,
@@ -140,9 +146,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78933CF826F4EE8F008FF343 /* RealmViewController.swift in Sources */,
 				78894F2D26DE945500DA4AD0 /* AppDelegate.swift in Sources */,
 				78894F3726DE945500DA4AD0 /* _4_7HomeWork.xcdatamodeld in Sources */,
 				78894F2F26DE945500DA4AD0 /* SceneDelegate.swift in Sources */,
+				78933CF626F4ECE2008FF343 /* CoreDataViewController.swift in Sources */,
 				78894F4426DE949000DA4AD0 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
