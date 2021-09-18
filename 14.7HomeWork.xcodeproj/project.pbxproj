@@ -16,7 +16,34 @@
 		78894F4426DE949000DA4AD0 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78894F4326DE949000DA4AD0 /* FirstViewController.swift */; };
 		78933CF626F4ECE2008FF343 /* CoreDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78933CF526F4ECE2008FF343 /* CoreDataViewController.swift */; };
 		78933CF826F4EE8F008FF343 /* RealmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78933CF726F4EE8F008FF343 /* RealmViewController.swift */; };
+		78933CFA26F4F3EE008FF343 /* ToDoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78933CF926F4F3EE008FF343 /* ToDoTableViewCell.swift */; };
+		78933D1326F50143008FF343 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78933D0926F4FEC7008FF343 /* Alamofire.framework */; };
+		78933D1426F50143008FF343 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 78933D0926F4FEC7008FF343 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		78933D1626F50145008FF343 /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78933D0D26F4FED5008FF343 /* AlamofireImage.framework */; };
+		78933D1726F50145008FF343 /* AlamofireImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 78933D0D26F4FED5008FF343 /* AlamofireImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		78933D1C26F50218008FF343 /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78933D1826F50217008FF343 /* MainTableViewCell.swift */; };
+		78933D1D26F50218008FF343 /* MainCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78933D1926F50217008FF343 /* MainCategory.swift */; };
+		78933D1E26F50218008FF343 /* MainLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78933D1A26F50218008FF343 /* MainLoader.swift */; };
+		78933D1F26F50218008FF343 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78933D1B26F50218008FF343 /* ViewController.swift */; };
+		78933D2426F59DF8008FF343 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78933D2326F59DF8008FF343 /* Realm.framework */; };
+		78933D2526F59DF8008FF343 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 78933D2326F59DF8008FF343 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		78933D1526F50143008FF343 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				78933D2526F59DF8008FF343 /* Realm.framework in Embed Frameworks */,
+				78933D1426F50143008FF343 /* Alamofire.framework in Embed Frameworks */,
+				78933D1726F50145008FF343 /* AlamofireImage.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		78894F2926DE945500DA4AD0 /* 14.7HomeWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 14.7HomeWork.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -30,6 +57,14 @@
 		78894F4326DE949000DA4AD0 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		78933CF526F4ECE2008FF343 /* CoreDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataViewController.swift; sourceTree = "<group>"; };
 		78933CF726F4EE8F008FF343 /* RealmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmViewController.swift; sourceTree = "<group>"; };
+		78933CF926F4F3EE008FF343 /* ToDoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoTableViewCell.swift; sourceTree = "<group>"; };
+		78933D0926F4FEC7008FF343 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "Carthage/Build/Alamofire.xcframework/ios-arm64_i386_x86_64-simulator/Alamofire.framework"; sourceTree = "<group>"; };
+		78933D0D26F4FED5008FF343 /* AlamofireImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireImage.framework; path = "Carthage/Build/AlamofireImage.xcframework/ios-arm64_i386_x86_64-simulator/AlamofireImage.framework"; sourceTree = "<group>"; };
+		78933D1826F50217008FF343 /* MainTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
+		78933D1926F50217008FF343 /* MainCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCategory.swift; sourceTree = "<group>"; };
+		78933D1A26F50218008FF343 /* MainLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainLoader.swift; sourceTree = "<group>"; };
+		78933D1B26F50218008FF343 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		78933D2326F59DF8008FF343 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = "Carthage/Build/Realm.xcframework/ios-i386_x86_64-simulator/Realm.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +72,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78933D2426F59DF8008FF343 /* Realm.framework in Frameworks */,
+				78933D1326F50143008FF343 /* Alamofire.framework in Frameworks */,
+				78933D1626F50145008FF343 /* AlamofireImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,6 +86,7 @@
 			children = (
 				78894F2B26DE945500DA4AD0 /* 14.7HomeWork */,
 				78894F2A26DE945500DA4AD0 /* Products */,
+				78933D0426F4FC86008FF343 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,13 +106,36 @@
 				78894F3226DE945500DA4AD0 /* Main.storyboard */,
 				78933CF726F4EE8F008FF343 /* RealmViewController.swift */,
 				78933CF526F4ECE2008FF343 /* CoreDataViewController.swift */,
+				78933CF926F4F3EE008FF343 /* ToDoTableViewCell.swift */,
 				78894F4326DE949000DA4AD0 /* FirstViewController.swift */,
+				78933CFB26F4F7E0008FF343 /* Rick and Morty */,
 				78894F3826DE945500DA4AD0 /* Assets.xcassets */,
 				78894F3A26DE945500DA4AD0 /* LaunchScreen.storyboard */,
 				78894F3D26DE945500DA4AD0 /* Info.plist */,
 				78894F3526DE945500DA4AD0 /* _4_7HomeWork.xcdatamodeld */,
 			);
 			path = 14.7HomeWork;
+			sourceTree = "<group>";
+		};
+		78933CFB26F4F7E0008FF343 /* Rick and Morty */ = {
+			isa = PBXGroup;
+			children = (
+				78933D1926F50217008FF343 /* MainCategory.swift */,
+				78933D1A26F50218008FF343 /* MainLoader.swift */,
+				78933D1826F50217008FF343 /* MainTableViewCell.swift */,
+				78933D1B26F50218008FF343 /* ViewController.swift */,
+			);
+			path = "Rick and Morty";
+			sourceTree = "<group>";
+		};
+		78933D0426F4FC86008FF343 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				78933D2326F59DF8008FF343 /* Realm.framework */,
+				78933D0D26F4FED5008FF343 /* AlamofireImage.framework */,
+				78933D0926F4FEC7008FF343 /* Alamofire.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,6 +148,7 @@
 				78894F2526DE945500DA4AD0 /* Sources */,
 				78894F2626DE945500DA4AD0 /* Frameworks */,
 				78894F2726DE945500DA4AD0 /* Resources */,
+				78933D1526F50143008FF343 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -146,10 +209,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78933CFA26F4F3EE008FF343 /* ToDoTableViewCell.swift in Sources */,
 				78933CF826F4EE8F008FF343 /* RealmViewController.swift in Sources */,
+				78933D1C26F50218008FF343 /* MainTableViewCell.swift in Sources */,
 				78894F2D26DE945500DA4AD0 /* AppDelegate.swift in Sources */,
+				78933D1F26F50218008FF343 /* ViewController.swift in Sources */,
 				78894F3726DE945500DA4AD0 /* _4_7HomeWork.xcdatamodeld in Sources */,
+				78933D1E26F50218008FF343 /* MainLoader.swift in Sources */,
 				78894F2F26DE945500DA4AD0 /* SceneDelegate.swift in Sources */,
+				78933D1D26F50218008FF343 /* MainCategory.swift in Sources */,
 				78933CF626F4ECE2008FF343 /* CoreDataViewController.swift in Sources */,
 				78894F4426DE949000DA4AD0 /* FirstViewController.swift in Sources */,
 			);
@@ -300,6 +368,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = STW7SF37T7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Alamofire.xcframework/ios-arm64_i386_x86_64-simulator",
+					"$(PROJECT_DIR)/Carthage/Build/AlamofireImage.xcframework/ios-arm64_i386_x86_64-simulator",
+					"$(PROJECT_DIR)/Carthage/Build/Alamofire.xcframework/ios-arm64_armv7",
+					"$(PROJECT_DIR)/Carthage/Build/Realm.xcframework/ios-arm64_i386_x86_64-simulator",
+					"$(PROJECT_DIR)/Carthage/Build/Realm.xcframework/ios-i386_x86_64-simulator",
+				);
 				INFOPLIST_FILE = 14.7HomeWork/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -319,6 +395,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = STW7SF37T7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Alamofire.xcframework/ios-arm64_i386_x86_64-simulator",
+					"$(PROJECT_DIR)/Carthage/Build/AlamofireImage.xcframework/ios-arm64_i386_x86_64-simulator",
+					"$(PROJECT_DIR)/Carthage/Build/Alamofire.xcframework/ios-arm64_armv7",
+					"$(PROJECT_DIR)/Carthage/Build/Realm.xcframework/ios-arm64_i386_x86_64-simulator",
+					"$(PROJECT_DIR)/Carthage/Build/Realm.xcframework/ios-i386_x86_64-simulator",
+				);
 				INFOPLIST_FILE = 14.7HomeWork/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
