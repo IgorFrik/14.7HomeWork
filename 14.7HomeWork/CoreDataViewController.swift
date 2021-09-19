@@ -10,7 +10,6 @@ import UIKit
 class CoreDataViewController: UIViewController {
     
     @IBOutlet weak var toDoTable: UITableView!
-    @IBOutlet weak var eButton: UIButton!
     @IBOutlet weak var dButton: UIButton!
     var todoList: [String] = []
     var currentCell: Int = 0
@@ -21,7 +20,7 @@ class CoreDataViewController: UIViewController {
         toDoTable.reloadData()
     }
     
-    func presentNewAlert() {
+    @IBAction func newButton(_ sender: Any) {
         let alertController = UIAlertController(title: "Add new element", message: "Please input your ToDo:", preferredStyle: .alert)
         
         alertController.addTextField { (textField) in
@@ -41,13 +40,6 @@ class CoreDataViewController: UIViewController {
         alertController.addAction(cancelAction)
 
         present(alertController, animated: true, completion: nil)
-    }
-    
-    @IBAction func newButton(_ sender: Any) {
-        presentNewAlert()
-        print(currentCell)
-    }
-    @IBAction func editButton(_ sender: Any) {
     }
     @IBAction func deleteButton(_ sender: Any) {
     }
