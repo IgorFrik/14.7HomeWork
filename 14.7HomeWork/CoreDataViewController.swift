@@ -29,7 +29,6 @@ class CoreDataViewController: UIViewController {
       } catch let error as NSError {
         print("Could not fetch. \(error), \(error.userInfo)")
       }
-//        self.tableView(toDoTable, didSelectRowAt: toDoTable.indexPathForSelectedRow!)
     }
     
     func save(toDo: String) {
@@ -64,7 +63,7 @@ class CoreDataViewController: UIViewController {
         }
         let confirmAction = UIAlertAction(title: "Confirm", style: .default) { (_) in
             if let newTodoTextField = alertController.textFields?[0] {
-                let toDoToSave = newTodoTextField.text ?? "Error"
+                let toDoToSave = newTodoTextField.text!
                 self.save(toDo: toDoToSave)
                 self.toDoTable.reloadData()
             }
@@ -73,7 +72,7 @@ class CoreDataViewController: UIViewController {
         alertController.addAction(confirmAction)
         alertController.addAction(cancelAction)
         present(alertController, animated: true, completion: nil)
-        dButton.isHidden = false
+        dButton.isHidden = true
     }
     
     @IBAction func deleteButton(_ sender: Any) {
@@ -89,7 +88,7 @@ class CoreDataViewController: UIViewController {
     }
 }
 
-extension CoreDataViewController: UITableViewDataSource {
+extension CoreDataViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return todoList.count
