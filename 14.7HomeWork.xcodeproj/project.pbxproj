@@ -17,28 +17,28 @@
 		78933CF626F4ECE2008FF343 /* CoreDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78933CF526F4ECE2008FF343 /* CoreDataViewController.swift */; };
 		78933CF826F4EE8F008FF343 /* RealmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78933CF726F4EE8F008FF343 /* RealmViewController.swift */; };
 		78933CFA26F4F3EE008FF343 /* ToDoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78933CF926F4F3EE008FF343 /* ToDoTableViewCell.swift */; };
-		78933D1326F50143008FF343 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78933D0926F4FEC7008FF343 /* Alamofire.framework */; };
-		78933D1426F50143008FF343 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 78933D0926F4FEC7008FF343 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		78933D1626F50145008FF343 /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78933D0D26F4FED5008FF343 /* AlamofireImage.framework */; };
-		78933D1726F50145008FF343 /* AlamofireImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 78933D0D26F4FED5008FF343 /* AlamofireImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		78933D1C26F50218008FF343 /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78933D1826F50217008FF343 /* MainTableViewCell.swift */; };
 		78933D1D26F50218008FF343 /* MainCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78933D1926F50217008FF343 /* MainCategory.swift */; };
 		78933D1E26F50218008FF343 /* MainLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78933D1A26F50218008FF343 /* MainLoader.swift */; };
 		78933D1F26F50218008FF343 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78933D1B26F50218008FF343 /* ViewController.swift */; };
-		78933D2426F59DF8008FF343 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78933D2326F59DF8008FF343 /* Realm.framework */; };
-		78933D2526F59DF8008FF343 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 78933D2326F59DF8008FF343 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		78933D3F26F8E431008FF343 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78933D2326F59DF8008FF343 /* Realm.framework */; };
+		78933D4026F8E431008FF343 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 78933D2326F59DF8008FF343 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		78933D4126F8E431008FF343 /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78933D0D26F4FED5008FF343 /* AlamofireImage.framework */; };
+		78933D4226F8E431008FF343 /* AlamofireImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 78933D0D26F4FED5008FF343 /* AlamofireImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		78933D4326F8E431008FF343 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78933D0926F4FEC7008FF343 /* Alamofire.framework */; };
+		78933D4426F8E431008FF343 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 78933D0926F4FEC7008FF343 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		78933D1526F50143008FF343 /* Embed Frameworks */ = {
+		78933D4526F8E431008FF343 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				78933D2526F59DF8008FF343 /* Realm.framework in Embed Frameworks */,
-				78933D1426F50143008FF343 /* Alamofire.framework in Embed Frameworks */,
-				78933D1726F50145008FF343 /* AlamofireImage.framework in Embed Frameworks */,
+				78933D4026F8E431008FF343 /* Realm.framework in Embed Frameworks */,
+				78933D4426F8E431008FF343 /* Alamofire.framework in Embed Frameworks */,
+				78933D4226F8E431008FF343 /* AlamofireImage.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -72,9 +72,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				78933D2426F59DF8008FF343 /* Realm.framework in Frameworks */,
-				78933D1326F50143008FF343 /* Alamofire.framework in Frameworks */,
-				78933D1626F50145008FF343 /* AlamofireImage.framework in Frameworks */,
+				78933D3F26F8E431008FF343 /* Realm.framework in Frameworks */,
+				78933D4326F8E431008FF343 /* Alamofire.framework in Frameworks */,
+				78933D4126F8E431008FF343 /* AlamofireImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,7 +148,7 @@
 				78894F2526DE945500DA4AD0 /* Sources */,
 				78894F2626DE945500DA4AD0 /* Frameworks */,
 				78894F2726DE945500DA4AD0 /* Resources */,
-				78933D1526F50143008FF343 /* Embed Frameworks */,
+				78933D4526F8E431008FF343 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

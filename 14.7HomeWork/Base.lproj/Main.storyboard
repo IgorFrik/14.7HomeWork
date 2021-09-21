@@ -108,13 +108,6 @@
                                                     <action selector="newButton:" destination="T6T-vh-Gge" eventType="touchUpInside" id="25A-6f-jEK"/>
                                                 </connections>
                                             </button>
-                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2h5-nf-UQQ">
-                                                <rect key="frame" x="0.0" y="10" width="0.0" height="30"/>
-                                                <state key="normal" title="Edit"/>
-                                                <connections>
-                                                    <action selector="editButton:" destination="T6T-vh-Gge" eventType="touchUpInside" id="Dga-2M-RKc"/>
-                                                </connections>
-                                            </button>
                                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S4Q-Lg-nWm">
                                                 <rect key="frame" x="0.0" y="10" width="0.0" height="30"/>
                                                 <state key="normal" title="Delete"/>
@@ -149,7 +142,6 @@
                     </view>
                     <connections>
                         <outlet property="dButton" destination="S4Q-Lg-nWm" id="LPa-NI-CtY"/>
-                        <outlet property="eButton" destination="2h5-nf-UQQ" id="eym-20-XmK"/>
                         <outlet property="toDoTable" destination="5Iw-VU-0wM" id="Wv1-Jq-X6b"/>
                     </connections>
                 </viewController>
