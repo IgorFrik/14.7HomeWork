@@ -30,7 +30,7 @@ class CoreDataViewController: UIViewController {
         print("Could not fetch. \(error), \(error.userInfo)")
       }
     }
-    
+//-------------------------------------------FUNC-------------------------------------------
     func save(toDo: String) {
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
         let managedContext = appDelegate.persistentContainer.viewContext
@@ -40,22 +40,30 @@ class CoreDataViewController: UIViewController {
         do {
             try managedContext.save()
             todoList.append(element)
+            self.toDoTable.reloadData()
         } catch let error as NSError {
             print("Could not save. \(error), \(error.userInfo)")
-            
         }
     }
     
-    func deleteElement(toDo: String) {
+    func deleteElement() {
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
         let managedContext = appDelegate.persistentContainer.viewContext
-        let entity = NSEntityDescription.entity(forEntityName: "ToDoCoreData", in: managedContext)!
-        let element = NSManagedObject(entity: entity, insertInto: managedContext)
-        element.setValue(toDo, forKey: "toDo")
-        managedContext.delete(element)
-        todoList.remove(at: currentCell)
+        managedContext.delete(todoList[self.currentCell] as NSManagedObject)
+        todoList.remove(at: self.currentCell)
+        let _ : NSError! = nil
+        do {
+            try managedContext.save()
+            self.toDoTable.reloadData()
+        } catch {
+            print("error : \(error)")
+        }
     }
     
+    func hideDButton() {
+        self.dButton.isHidden = true
+    }
+//-------------------------------------------BUTTONS-------------------------------------------
     @IBAction func newButton(_ sender: Any) {
         let alertController = UIAlertController(title: "Add new element", message: "Please input your ToDo:", preferredStyle: .alert)
         alertController.addTextField { (textField) in
@@ -65,28 +73,33 @@ class CoreDataViewController: UIViewController {
             if let newTodoTextField = alertController.textFields?[0] {
                 let toDoToSave = newTodoTextField.text!
                 self.save(toDo: toDoToSave)
-                self.toDoTable.reloadData()
+                self.hideDButton()
             }
         }
-        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel) { (_) in }
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel) { (_) in
+            self.hideDButton()
+        }
         alertController.addAction(confirmAction)
         alertController.addAction(cancelAction)
         present(alertController, animated: true, completion: nil)
-        dButton.isHidden = true
     }
     
     @IBAction func deleteButton(_ sender: Any) {
-        let alertController = UIAlertController(title: "Delete element", message: "Delete \(todoList[currentCell])?:", preferredStyle: .alert)
+        let alertController = UIAlertController(title: "Delete element", message: "Delete \(self.todoList[currentCell].value(forKey: "toDo") ?? "This element")?", preferredStyle: .alert)
         let confirmAction = UIAlertAction(title: "Confirm", style: .default) { (_) in
-            self.toDoTable.reloadData()
+            self.deleteElement()
+            self.hideDButton()
         }
-        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel) { (_) in }
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel) { (_) in
+            self.hideDButton()
+        }
         alertController.addAction(confirmAction)
         alertController.addAction(cancelAction)
         present(alertController, animated: true, completion: nil)
-        self.dButton.isHidden = true
     }
 }
+
+
 
 extension CoreDataViewController: UITableViewDataSource, UITableViewDelegate {
     
