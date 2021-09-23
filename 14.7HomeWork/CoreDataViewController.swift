@@ -7,7 +7,7 @@
 
 import UIKit
 import CoreData
-
+ 
 class CoreDataViewController: UIViewController {
     
     @IBOutlet weak var toDoTable: UITableView!
@@ -62,6 +62,7 @@ class CoreDataViewController: UIViewController {
     
     func hideDButton() {
         self.dButton.isHidden = true
+        
     }
 //-------------------------------------------BUTTONS-------------------------------------------
     @IBAction func newButton(_ sender: Any) {

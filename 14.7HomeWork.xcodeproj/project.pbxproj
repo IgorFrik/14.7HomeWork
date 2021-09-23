@@ -3,10 +3,18 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		784490FA26FCD85600F78EB7 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 784490F926FCD85600F78EB7 /* Alamofire.framework */; platformFilter = ios; };
+		784490FB26FCD85600F78EB7 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 784490F926FCD85600F78EB7 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		784490FE26FCD85F00F78EB7 /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 784490FD26FCD85F00F78EB7 /* AlamofireImage.framework */; platformFilter = ios; };
+		784490FF26FCD85F00F78EB7 /* AlamofireImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 784490FD26FCD85F00F78EB7 /* AlamofireImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7844910426FCDFAF00F78EB7 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7844910326FCDFAF00F78EB7 /* RealmSwift.framework */; platformFilter = ios; };
+		7844910526FCDFAF00F78EB7 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7844910326FCDFAF00F78EB7 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7844910726FCEA0900F78EB7 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7844910626FCEA0900F78EB7 /* Realm.framework */; platformFilter = ios; };
+		7844910826FCEA0900F78EB7 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7844910626FCEA0900F78EB7 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		78894F2D26DE945500DA4AD0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78894F2C26DE945500DA4AD0 /* AppDelegate.swift */; };
 		78894F2F26DE945500DA4AD0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78894F2E26DE945500DA4AD0 /* SceneDelegate.swift */; };
 		78894F3426DE945500DA4AD0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78894F3226DE945500DA4AD0 /* Main.storyboard */; };
@@ -21,24 +29,19 @@
 		78933D1D26F50218008FF343 /* MainCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78933D1926F50217008FF343 /* MainCategory.swift */; };
 		78933D1E26F50218008FF343 /* MainLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78933D1A26F50218008FF343 /* MainLoader.swift */; };
 		78933D1F26F50218008FF343 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78933D1B26F50218008FF343 /* ViewController.swift */; };
-		78933D3F26F8E431008FF343 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78933D2326F59DF8008FF343 /* Realm.framework */; };
-		78933D4026F8E431008FF343 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 78933D2326F59DF8008FF343 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		78933D4126F8E431008FF343 /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78933D0D26F4FED5008FF343 /* AlamofireImage.framework */; };
-		78933D4226F8E431008FF343 /* AlamofireImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 78933D0D26F4FED5008FF343 /* AlamofireImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		78933D4326F8E431008FF343 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78933D0926F4FEC7008FF343 /* Alamofire.framework */; };
-		78933D4426F8E431008FF343 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 78933D0926F4FEC7008FF343 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		78933D4526F8E431008FF343 /* Embed Frameworks */ = {
+		784490FC26FCD85600F78EB7 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				78933D4026F8E431008FF343 /* Realm.framework in Embed Frameworks */,
-				78933D4426F8E431008FF343 /* Alamofire.framework in Embed Frameworks */,
-				78933D4226F8E431008FF343 /* AlamofireImage.framework in Embed Frameworks */,
+				7844910826FCEA0900F78EB7 /* Realm.framework in Embed Frameworks */,
+				784490FB26FCD85600F78EB7 /* Alamofire.framework in Embed Frameworks */,
+				784490FF26FCD85F00F78EB7 /* AlamofireImage.framework in Embed Frameworks */,
+				7844910526FCDFAF00F78EB7 /* RealmSwift.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -46,6 +49,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		784490F926FCD85600F78EB7 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "Carthage/Build/Alamofire.xcframework/ios-arm64_i386_x86_64-simulator/Alamofire.framework"; sourceTree = "<group>"; };
+		784490FD26FCD85F00F78EB7 /* AlamofireImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireImage.framework; path = "Carthage/Build/AlamofireImage.xcframework/ios-arm64_i386_x86_64-simulator/AlamofireImage.framework"; sourceTree = "<group>"; };
+		7844910326FCDFAF00F78EB7 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = "Carthage/Build/RealmSwift.xcframework/ios-arm64_i386_x86_64-simulator/RealmSwift.framework"; sourceTree = "<group>"; };
+		7844910626FCEA0900F78EB7 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = "Carthage/Build/Realm.xcframework/ios-arm64_i386_x86_64-simulator/Realm.framework"; sourceTree = "<group>"; };
 		78894F2926DE945500DA4AD0 /* 14.7HomeWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 14.7HomeWork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78894F2C26DE945500DA4AD0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		78894F2E26DE945500DA4AD0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,13 +65,10 @@
 		78933CF526F4ECE2008FF343 /* CoreDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataViewController.swift; sourceTree = "<group>"; };
 		78933CF726F4EE8F008FF343 /* RealmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmViewController.swift; sourceTree = "<group>"; };
 		78933CF926F4F3EE008FF343 /* ToDoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoTableViewCell.swift; sourceTree = "<group>"; };
-		78933D0926F4FEC7008FF343 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "Carthage/Build/Alamofire.xcframework/ios-arm64_i386_x86_64-simulator/Alamofire.framework"; sourceTree = "<group>"; };
-		78933D0D26F4FED5008FF343 /* AlamofireImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireImage.framework; path = "Carthage/Build/AlamofireImage.xcframework/ios-arm64_i386_x86_64-simulator/AlamofireImage.framework"; sourceTree = "<group>"; };
 		78933D1826F50217008FF343 /* MainTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
 		78933D1926F50217008FF343 /* MainCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCategory.swift; sourceTree = "<group>"; };
 		78933D1A26F50218008FF343 /* MainLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainLoader.swift; sourceTree = "<group>"; };
 		78933D1B26F50218008FF343 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		78933D2326F59DF8008FF343 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = "Carthage/Build/Realm.xcframework/ios-i386_x86_64-simulator/Realm.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,9 +76,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				78933D3F26F8E431008FF343 /* Realm.framework in Frameworks */,
-				78933D4326F8E431008FF343 /* Alamofire.framework in Frameworks */,
-				78933D4126F8E431008FF343 /* AlamofireImage.framework in Frameworks */,
+				7844910726FCEA0900F78EB7 /* Realm.framework in Frameworks */,
+				784490FA26FCD85600F78EB7 /* Alamofire.framework in Frameworks */,
+				784490FE26FCD85F00F78EB7 /* AlamofireImage.framework in Frameworks */,
+				7844910426FCDFAF00F78EB7 /* RealmSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,9 +136,10 @@
 		78933D0426F4FC86008FF343 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				78933D2326F59DF8008FF343 /* Realm.framework */,
-				78933D0D26F4FED5008FF343 /* AlamofireImage.framework */,
-				78933D0926F4FEC7008FF343 /* Alamofire.framework */,
+				7844910626FCEA0900F78EB7 /* Realm.framework */,
+				7844910326FCDFAF00F78EB7 /* RealmSwift.framework */,
+				784490FD26FCD85F00F78EB7 /* AlamofireImage.framework */,
+				784490F926FCD85600F78EB7 /* Alamofire.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -148,7 +154,7 @@
 				78894F2526DE945500DA4AD0 /* Sources */,
 				78894F2626DE945500DA4AD0 /* Frameworks */,
 				78894F2726DE945500DA4AD0 /* Resources */,
-				78933D4526F8E431008FF343 /* Embed Frameworks */,
+				784490FC26FCD85600F78EB7 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -375,6 +381,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/Alamofire.xcframework/ios-arm64_armv7",
 					"$(PROJECT_DIR)/Carthage/Build/Realm.xcframework/ios-arm64_i386_x86_64-simulator",
 					"$(PROJECT_DIR)/Carthage/Build/Realm.xcframework/ios-i386_x86_64-simulator",
+					"$(PROJECT_DIR)/Carthage/Build/RealmSwift.xcframework/ios-arm64_i386_x86_64-simulator",
 				);
 				INFOPLIST_FILE = 14.7HomeWork/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -402,6 +409,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/Alamofire.xcframework/ios-arm64_armv7",
 					"$(PROJECT_DIR)/Carthage/Build/Realm.xcframework/ios-arm64_i386_x86_64-simulator",
 					"$(PROJECT_DIR)/Carthage/Build/Realm.xcframework/ios-i386_x86_64-simulator",
+					"$(PROJECT_DIR)/Carthage/Build/RealmSwift.xcframework/ios-arm64_i386_x86_64-simulator",
 				);
 				INFOPLIST_FILE = 14.7HomeWork/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

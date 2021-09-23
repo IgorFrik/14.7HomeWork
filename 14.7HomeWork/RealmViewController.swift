@@ -6,33 +6,43 @@
 //
 
 import UIKit
-import CoreData
+import RealmSwift
+
+class RealmToDo: Object {
+    @objc dynamic var toDo = ""
+}
 
 class RealmViewController: UIViewController {
     
     @IBOutlet weak var toDoTable: UITableView!
     @IBOutlet weak var dButton: UIButton!
+    private let realm = try! Realm()
     var currentCell: Int = 0
-    var todoList: [NSManagedObject] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    
-    override func viewWillAppear(_ animated: Bool) {
-      super.viewWillAppear(animated)
-    }
 //-------------------------------------------FUNC-------------------------------------------
     func save(toDo: String) {
-
+        let element = RealmToDo()
+        element.toDo = toDo
+        try! realm.write {
+            realm.add(element)
+        }
+        self.toDoTable.reloadData()
     }
     
     func deleteElement() {
-
+        let element = realm.objects(RealmToDo.self)[currentCell]
+        try! realm.write {
+            realm.delete(element)
+        }
+        self.toDoTable.reloadData()
     }
     
     func hideDButton() {
         self.dButton.isHidden = true
+        
     }
 //-------------------------------------------BUTTONS-------------------------------------------
     @IBAction func newButton(_ sender: Any) {
@@ -53,11 +63,11 @@ class RealmViewController: UIViewController {
         alertController.addAction(confirmAction)
         alertController.addAction(cancelAction)
         present(alertController, animated: true, completion: nil)
-
     }
     
     @IBAction func deleteButton(_ sender: Any) {
-        let alertController = UIAlertController(title: "Delete element", message: "Delete \(self.todoList[currentCell].value(forKey: "toDo") ?? "This element")?", preferredStyle: .alert)
+        let currentElement = realm.objects(RealmToDo.self)[currentCell]
+        let alertController = UIAlertController(title: "Delete element", message: "Delete \(currentElement.toDo)?", preferredStyle: .alert)
         let confirmAction = UIAlertAction(title: "Confirm", style: .default) { (_) in
             self.deleteElement()
             self.hideDButton()
@@ -76,13 +86,13 @@ class RealmViewController: UIViewController {
 extension RealmViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return todoList.count
+        return realm.objects(RealmToDo.self).count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ToDoCell") as! ToDoTableViewCell
-//        let currentToDo = todoList[indexPath.row]
-//        cell.toDoLabel.text = currentToDo.value(forKey: "toDo") as? String
+        let element = realm.objects(RealmToDo.self)[indexPath.row]
+        cell.toDoLabel.text = element.toDo
         return cell
     }
     
