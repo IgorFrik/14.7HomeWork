@@ -8,16 +8,15 @@
 import Foundation
 import UIKit
 import Alamofire
+import RealmSwift
 
-class Category{
-    let id: Int
-    let image: URL
-    let name: String
-    let status: String
-    let species: String
-    let statusColor: UIColor
-    let lastLocation: String
-    let episodes: [String]
+class Category: Object{
+    @objc dynamic var id: Int = 0
+    @objc dynamic var image: String = ""
+    @objc dynamic var name: String = ""
+    @objc dynamic var status: String = ""
+    @objc dynamic var species: String = ""
+    @objc dynamic var lastLocation: String = ""
 
     enum colors: String {
         case Alive, Dead, unknown
@@ -31,23 +30,24 @@ class Category{
         }
     }
     
+    override init() {
+        super.init()
+    }
+    
     init?(data: NSDictionary) {
         guard let id = data["id"] as? Int,
               let image = data["image"] as? String,
               let name = data["name"] as? String,
               let status = data["status"] as? String,
               let species = data["species"] as? String,
-              let lastLocation = data["location"] as? NSDictionary,
-              let episodes = data["episode"] as? [String]
+              let lastLocation = data["location"] as? NSDictionary
         else { return nil }
         self.id = id
-        self.image = URL(string: image)!
+        self.image = image
         self.name = name
         self.status = status
-        self.statusColor = colors.init(rawValue: status)!.color
         self.species = species
         self.lastLocation = lastLocation["name"] as! String
-        self.episodes = episodes
     }
 }
 

@@ -27,7 +27,6 @@
 		78933CFA26F4F3EE008FF343 /* ToDoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78933CF926F4F3EE008FF343 /* ToDoTableViewCell.swift */; };
 		78933D1C26F50218008FF343 /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78933D1826F50217008FF343 /* MainTableViewCell.swift */; };
 		78933D1D26F50218008FF343 /* MainCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78933D1926F50217008FF343 /* MainCategory.swift */; };
-		78933D1E26F50218008FF343 /* MainLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78933D1A26F50218008FF343 /* MainLoader.swift */; };
 		78933D1F26F50218008FF343 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78933D1B26F50218008FF343 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -67,7 +66,6 @@
 		78933CF926F4F3EE008FF343 /* ToDoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoTableViewCell.swift; sourceTree = "<group>"; };
 		78933D1826F50217008FF343 /* MainTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
 		78933D1926F50217008FF343 /* MainCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCategory.swift; sourceTree = "<group>"; };
-		78933D1A26F50218008FF343 /* MainLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainLoader.swift; sourceTree = "<group>"; };
 		78933D1B26F50218008FF343 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -126,7 +124,6 @@
 			isa = PBXGroup;
 			children = (
 				78933D1926F50217008FF343 /* MainCategory.swift */,
-				78933D1A26F50218008FF343 /* MainLoader.swift */,
 				78933D1826F50217008FF343 /* MainTableViewCell.swift */,
 				78933D1B26F50218008FF343 /* ViewController.swift */,
 			);
@@ -221,7 +218,6 @@
 				78894F2D26DE945500DA4AD0 /* AppDelegate.swift in Sources */,
 				78933D1F26F50218008FF343 /* ViewController.swift in Sources */,
 				78894F3726DE945500DA4AD0 /* _4_7HomeWork.xcdatamodeld in Sources */,
-				78933D1E26F50218008FF343 /* MainLoader.swift in Sources */,
 				78894F2F26DE945500DA4AD0 /* SceneDelegate.swift in Sources */,
 				78933D1D26F50218008FF343 /* MainCategory.swift in Sources */,
 				78933CF626F4ECE2008FF343 /* CoreDataViewController.swift in Sources */,
