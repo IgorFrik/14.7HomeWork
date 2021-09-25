@@ -1,0 +1,60 @@
+{
+  "Mac" : [
+    {
+      "swiftToolchainVersion" : "5.5 (swiftlang-1300.0.31.1 clang-1300.0.29.1)",
+      "hash" : "4c86451fccc9ec3c10dd2ed4a0f33a582af67747f048756758520d8ad5df4d21",
+      "name" : "AlamofireImage",
+      "container" : "AlamofireImage.xcframework",
+      "identifier" : "macos-arm64_x86_64"
+    }
+  ],
+  "watchOS" : [
+    {
+      "swiftToolchainVersion" : "5.5 (swiftlang-1300.0.31.1 clang-1300.0.29.1)",
+      "hash" : "9b8020b72ff450a61cc8e5214d770d23cae88729f55a75a899f19acd640481ba",
+      "name" : "AlamofireImage",
+      "container" : "AlamofireImage.xcframework",
+      "identifier" : "watchos-arm64_32_armv7k"
+    },
+    {
+      "swiftToolchainVersion" : "5.5 (swiftlang-1300.0.31.1 clang-1300.0.29.1)",
+      "hash" : "a514866783f8b4e4fca94e8d5ce4deda12dd762bc458771911c8bac995d98327",
+      "name" : "AlamofireImage",
+      "container" : "AlamofireImage.xcframework",
+      "identifier" : "watchos-arm64_i386_x86_64-simulator"
+    }
+  ],
+  "tvOS" : [
+    {
+      "swiftToolchainVersion" : "5.5 (swiftlang-1300.0.31.1 clang-1300.0.29.1)",
+      "hash" : "09435e65bd29a429559b9ac3c2c696f9ca451198964965335e1ffd18e5c37505",
+      "name" : "AlamofireImage",
+      "container" : "AlamofireImage.xcframework",
+      "identifier" : "tvos-arm64"
+    },
+    {
+      "swiftToolchainVersion" : "5.5 (swiftlang-1300.0.31.1 clang-1300.0.29.1)",
+      "hash" : "35556a38d7d479713ce4023e819d7b3b18c9949620898cc6be5c5ffa543f8f60",
+      "name" : "AlamofireImage",
+      "container" : "AlamofireImage.xcframework",
+      "identifier" : "tvos-arm64_x86_64-simulator"
+    }
+  ],
+  "commitish" : "4.2.0",
+  "iOS" : [
+    {
+      "swiftToolchainVersion" : "5.5 (swiftlang-1300.0.31.1 clang-1300.0.29.1)",
+      "hash" : "f26b7833a1c626c1c3353fb4a04a461d1b814320c770c5bf45e1e0de233b90ab",
+      "name" : "AlamofireImage",
+      "container" : "AlamofireImage.xcframework",
+      "identifier" : "ios-arm64_i386_x86_64-simulator"
+    },
+    {
+      "swiftToolchainVersion" : "5.5 (swiftlang-1300.0.31.1 clang-1300.0.29.1)",
+      "hash" : "43fffdf673fade805ae035efa7147750c73af540bbe628b4e714b715c3b1529c",
+      "name" : "AlamofireImage",
+      "container" : "AlamofireImage.xcframework",
+      "identifier" : "ios-arm64_armv7"
+    }
+  ]
+}

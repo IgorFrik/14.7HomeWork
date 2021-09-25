@@ -1,0 +1,115 @@
+{
+  "Mac" : [
+    {
+      "hash" : "7f87a69968115a7340080aed5a7f47358de658a5a5d9740522243e273287ed63",
+      "name" : "Realm",
+      "container" : "Realm.xcframework",
+      "identifier" : "macos-arm64_x86_64"
+    },
+    {
+      "swiftToolchainVersion" : "5.5 (swiftlang-1300.0.31.1 clang-1300.0.29.1)",
+      "hash" : "2cdea2c7a20220f989d14766cdb11dee4986162dcd8a46b4c226f0589cddc9d2",
+      "name" : "RealmSwift",
+      "container" : "RealmSwift.xcframework",
+      "identifier" : "macos-arm64_x86_64"
+    }
+  ],
+  "watchOS" : [
+    {
+      "hash" : "7b7d4b3066e7d95dfb846138e2e0175dac220045840ec01f0a6fe9a2ba356494",
+      "name" : "Realm",
+      "container" : "Realm.xcframework",
+      "identifier" : "watchos-arm64_i386_x86_64-simulator"
+    },
+    {
+      "hash" : "48ed3cdf1a4c004ed6b40c724fd08f5caea67340a6e270796769e2dfa8c63ab0",
+      "name" : "Realm",
+      "container" : "Realm.xcframework",
+      "identifier" : "watchos-arm64_32_armv7k"
+    },
+    {
+      "swiftToolchainVersion" : "5.5 (swiftlang-1300.0.31.1 clang-1300.0.29.1)",
+      "hash" : "9af5ad42ff55d90a30a467a79a762d0c0b603129966b2ae9928da2869b444c3e",
+      "name" : "RealmSwift",
+      "container" : "RealmSwift.xcframework",
+      "identifier" : "watchos-arm64_i386_x86_64-simulator"
+    },
+    {
+      "swiftToolchainVersion" : "5.5 (swiftlang-1300.0.31.1 clang-1300.0.29.1)",
+      "hash" : "b90add9d1d172ce3def5b87e964ebf08d918f26dedb74f6dc0170ef5dd17af4b",
+      "name" : "RealmSwift",
+      "container" : "RealmSwift.xcframework",
+      "identifier" : "watchos-arm64_32_armv7k"
+    }
+  ],
+  "tvOS" : [
+    {
+      "hash" : "636ce375f11c03b5de2ae64eed46ab4f62d55a5eb1861d0ae08165488cb7c750",
+      "name" : "Realm",
+      "container" : "Realm.xcframework",
+      "identifier" : "tvos-arm64"
+    },
+    {
+      "hash" : "e05fcfadfcda8c8f53a578c9996dda4b30e1c6d968b68d87c36dc9922c6a761c",
+      "name" : "Realm",
+      "container" : "Realm.xcframework",
+      "identifier" : "tvos-arm64_x86_64-simulator"
+    },
+    {
+      "swiftToolchainVersion" : "5.5 (swiftlang-1300.0.31.1 clang-1300.0.29.1)",
+      "hash" : "b9a67f27b5293c1c1f3880a9148c290509059a49f60894db1a07cd9c2e1e7a62",
+      "name" : "RealmSwift",
+      "container" : "RealmSwift.xcframework",
+      "identifier" : "tvos-arm64_x86_64-simulator"
+    },
+    {
+      "swiftToolchainVersion" : "5.5 (swiftlang-1300.0.31.1 clang-1300.0.29.1)",
+      "hash" : "0abb127663d56b7ec9730a97529800c1c1f71451b9772040edd9dbb916e30508",
+      "name" : "RealmSwift",
+      "container" : "RealmSwift.xcframework",
+      "identifier" : "tvos-arm64"
+    }
+  ],
+  "commitish" : "v10.15.1",
+  "iOS" : [
+    {
+      "hash" : "a752ff09977e98e48ed985973568602546bc3c91ffd3d73599d123e59b905b28",
+      "name" : "Realm",
+      "container" : "Realm.xcframework",
+      "identifier" : "ios-arm64_x86_64-maccatalyst"
+    },
+    {
+      "hash" : "8f647d7a54c6bd83cd99bd713e8abf5e5fd2857ce4d4575a792eb7710e0bdd87",
+      "name" : "Realm",
+      "container" : "Realm.xcframework",
+      "identifier" : "ios-arm64_i386_x86_64-simulator"
+    },
+    {
+      "hash" : "9bcc8f2620dec07aed33892596f96e39b5249121baedfc872b41ffdac1da6f71",
+      "name" : "Realm",
+      "container" : "Realm.xcframework",
+      "identifier" : "ios-arm64_armv7"
+    },
+    {
+      "swiftToolchainVersion" : "5.5 (swiftlang-1300.0.31.1 clang-1300.0.29.1)",
+      "hash" : "8207788dc7630bfc5b8676d1ad2f0154b36884d7cc249f1993b6ec2d6373d85b",
+      "name" : "RealmSwift",
+      "container" : "RealmSwift.xcframework",
+      "identifier" : "ios-arm64_x86_64-maccatalyst"
+    },
+    {
+      "swiftToolchainVersion" : "5.5 (swiftlang-1300.0.31.1 clang-1300.0.29.1)",
+      "hash" : "235472349525d13ca38354f5f169b51df4a917b04c50891870fda4abbb866ac6",
+      "name" : "RealmSwift",
+      "container" : "RealmSwift.xcframework",
+      "identifier" : "ios-arm64_i386_x86_64-simulator"
+    },
+    {
+      "swiftToolchainVersion" : "5.5 (swiftlang-1300.0.31.1 clang-1300.0.29.1)",
+      "hash" : "a2fd0737bca8c4c71d5070ad66a2d8084478c996c8168afa67284bcba608fbae",
+      "name" : "RealmSwift",
+      "container" : "RealmSwift.xcframework",
+      "identifier" : "ios-arm64_armv7"
+    }
+  ]
+}
