@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		784490FA26FCD85600F78EB7 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 784490F926FCD85600F78EB7 /* Alamofire.framework */; platformFilter = ios; };
-		784490FB26FCD85600F78EB7 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 784490F926FCD85600F78EB7 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		784490FB26FCD85600F78EB7 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 784490F926FCD85600F78EB7 /* Alamofire.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		784490FE26FCD85F00F78EB7 /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 784490FD26FCD85F00F78EB7 /* AlamofireImage.framework */; platformFilter = ios; };
-		784490FF26FCD85F00F78EB7 /* AlamofireImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 784490FD26FCD85F00F78EB7 /* AlamofireImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		784490FF26FCD85F00F78EB7 /* AlamofireImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 784490FD26FCD85F00F78EB7 /* AlamofireImage.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7844910426FCDFAF00F78EB7 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7844910326FCDFAF00F78EB7 /* RealmSwift.framework */; platformFilter = ios; };
 		7844910526FCDFAF00F78EB7 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7844910326FCDFAF00F78EB7 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7844910726FCEA0900F78EB7 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7844910626FCEA0900F78EB7 /* Realm.framework */; platformFilter = ios; };
